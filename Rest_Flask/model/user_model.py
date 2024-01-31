@@ -16,7 +16,7 @@ class user_model:
             print("some error")
     
     def user_getuserwithid(self,id=None):
-        try:
+        try: 
             self.cur.execute("SELECT * FROM users where id="+id)
             result=self.cur.fetchone()
             
